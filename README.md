@@ -1,2 +1,1 @@
-# Electromagnetic_Levitation_System_Modeling
-Linear Control Systems [ECE 224]
+<h1> Linear Control Systems - Fall 2022- University of Tehran </h1>
