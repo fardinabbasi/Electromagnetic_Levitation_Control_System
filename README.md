@@ -13,6 +13,5 @@ By analyzing the aforementioned system, the equations are written as follows.
 | --- | --- | --- | ---| --- | --- |
 | $5[&Omega;]$ | $0.02[H]$ | $9.84  [\frac{m}{s^2}]$ | $0.3 [\frac{N \cdot m}{A^2}]$ | $106[g]$ | $0.02[\frac{N \cdot s}{m}]$ |
 
-
 ## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Time_Analysis)
 
