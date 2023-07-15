@@ -6,6 +6,8 @@ Magnetic levitation is a remarkable technique that utilizes the power of magneti
 The magnetic levitation system is represented by the understudied system depicted below.
 
 <img src="/readme_images/levitation_system.jpg">
+By analyzing the aforementioned system, the equations are written as follows.
+<img src="/readme_images/equations.PNG">
 
 ## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Time_Analysis)
 
