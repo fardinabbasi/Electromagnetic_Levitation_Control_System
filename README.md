@@ -33,4 +33,5 @@ The **root locus** diagram of the given closed-loop transfer function is display
 <img src="/readme_images/rlocus1.PNG">
 
 Please find the zoomed version of the root locus diagram displayed below.
+
 <img src="/readme_images/zoom.PNG">
