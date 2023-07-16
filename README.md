@@ -95,3 +95,7 @@ The PI controller: $G_c = \frac{(s + 2.371)}{s}$
 | Nyquist | Bode | Step Response | Step Info |
 | --- | --- | --- | --- |
 | <img src="/readme_images/nyquist2.jpg"> | <img src="/readme_images/bode4.jpg"> | <img src="/readme_images/step_responcef.jpg"> | <img src="/readme_images/info2.PNG"> |
+
+The system satisfies the **Nyquist Stability Criterion** as it possesses a pole in the right half of the imaginary axis, and N equals -1, meeting the condition $Z = N + P = 0$, thus establishing stability.
+
+Furthermore, the system currently exhibits a **phase margin** of approximately 50 degrees.
