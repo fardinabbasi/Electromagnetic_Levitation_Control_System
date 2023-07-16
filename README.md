@@ -80,7 +80,7 @@ The **Bode** and **Nyquist** diagrams of this uncontrolled system are depicted b
 | <img src="/readme_images/bode1.jpg"> | <img src="/readme_images/nyquist.jpg"> |
 
 The following conclusions can be drawn from the provided diagrams:
-1. As the magnitude never reaches 0 dB, the phase margin is considered to be infinite.
-2. The gain margin can be calculated as $k=\frac{1}{G(0)}$.
-3. At a frequency of 3 Hz, the gain decreases by 3 dB, indicating a bandwidth of 3 Hz.
-4.The system is unstable according to the Nyquist Stability Criterion because there is a pole in the right half of the imaginary axis and N=0, violating the condition $Z=N+P=0$.
+1. As the magnitude never reaches 0 dB, the **phase margin** is considered to be infinite.
+2. The **gain margin** can be calculated as $k=\frac{1}{G(0)}$.
+3. At a frequency of 3 Hz, the gain decreases by 3 dB, indicating a **bandwidth** of 3 Hz.
+4. The system is unstable according to the **Nyquist Stability Criterion** because there is a pole in the right half of the imaginary axis and N=0, violating the condition $Z=N+P=0$.
