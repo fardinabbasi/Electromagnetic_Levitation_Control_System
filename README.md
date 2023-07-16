@@ -58,4 +58,5 @@ After incorporating the PID controller into the system, its behavior is depicted
 | <img src="/readme_images/rlocus2.jpg"> | <img src="/readme_images/step.jpg"> | <img src="/readme_images/info.jpg"> |
 
 Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
-<img src="/readme_images/3d.gif">
+
+<img src="/readme_images/3d.gif" width="500" height="500">
