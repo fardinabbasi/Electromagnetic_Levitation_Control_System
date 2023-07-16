@@ -55,4 +55,4 @@ After incorporating the PID controller into the system, its behavior is depicted
 
 | Root Locus | Step Response | Step Info |
 | --- | --- | --- |
-| $5[&Omega;]$ | $0.02[H]$ | $9.84  [\frac{m}{s^2}]$ | $0.3 [\frac{N \cdot m}{A^2}]$ | $106[g]$ | $0.02[\frac{N \cdot s}{m}]$ |
+| <img src="/readme_images/rlocus2.jpg"> | <img src="/readme_images/step.jpg"> | <img src="/readme_images/info.jpg" |
