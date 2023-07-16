@@ -101,3 +101,4 @@ The system satisfies the **Nyquist Stability Criterion** as it possesses a pole 
 Furthermore, the system currently exhibits a **phase margin** of approximately 50 degrees.
 
 Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
+<img src="/readme_images/3d.gif" width="600" height="600">
