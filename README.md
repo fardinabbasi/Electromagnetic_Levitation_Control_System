@@ -84,3 +84,14 @@ The following conclusions can be drawn from the provided diagrams:
 2. The **gain margin** can be calculated as $k=\frac{1}{G(0)}$.
 3. At a frequency of 3 Hz, the gain decreases by 3 dB, indicating a **bandwidth** of 3 Hz.
 4. The system is unstable according to the **Nyquist Stability Criterion** because there is a pole in the right half of the imaginary axis and N=0, violating the condition $Z=N+P=0$.
+
+To stabilize this system, a **PI controller** is designed with the following desired attributes for a **step input**:
+
+1. The maximum **step response** should be within 2 seconds.
+2. The **steady-state error** should be zero.
+3. The maximum **overshoot** should be limited to 35%.
+The PI controller: $G_c = \frac{(s + 2.371)}{s}$
+
+| Nyquist | Bode | Step Response | Step Info |
+| --- | --- | --- | --- |
+| <img src="/readme_images/nyquist2.jpg"> | <img src="/readme_images/bode4.jpg"> | <img src="/readme_images/step_responcef.jpg"> | <img src="/readme_images/info2.PNG"> |
