@@ -60,3 +60,5 @@ After incorporating the PID controller into the system, its behavior is depicted
 Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
 
 <img src="/readme_images/3d.gif" width="500" height="500">
+
+## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Frequency_Analysis)
