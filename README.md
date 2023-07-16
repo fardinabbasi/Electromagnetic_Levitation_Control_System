@@ -62,3 +62,25 @@ Now this controller is added to the main **non-linear** system and its ability t
 <img src="/readme_images/3d.gif" width="500" height="500">
 
 ## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Frequency_Analysis)
+The **state space** is depicted below.
+
+<img src="/readme_images/state_space.PNG">
+
+The **linearization** around **y<sub>d</sub>** as the **setpoint** is accomplished with the following result.
+
+<img src="/readme_images/linearization.PNG">
+
+The **open-loop** transfer function is obtained by assuming y<sub>d</sub> = 0.306[m] and following this procedure.
+<img src="/readme_images/transfer_func.PNG">
+
+The **Bode** and **Nyquist** diagrams of this uncontrolled system are depicted below.
+
+| Bode | Nyquist |
+| --- | --- |
+| <img src="/readme_images/bode1.jpg"> | <img src="/readme_images/nyquist.jpg"> |
+
+The following conclusions can be drawn from the provided diagrams:
+1. As the magnitude never reaches 0 dB, the phase margin is considered to be infinite.
+2. The gain margin can be calculated as $k=\frac{1}{G(0)}$.
+3. At a frequency of 3 Hz, the gain decreases by 3 dB, indicating a bandwidth of 3 Hz.
+4.The system is unstable according to the Nyquist Stability Criterion because there is a pole in the right half of the imaginary axis and N=0, violating the condition $Z=N+P=0$.
