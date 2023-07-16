@@ -55,4 +55,4 @@ After incorporating the PID controller into the system, its behavior is depicted
 
 | Root Locus | Step Response | Step Info |
 | --- | --- | --- |
-| <img src="/readme_images/rlocus2.jpg"> | <img src="/readme_images/step.jpg"> | <img src="/readme_images/info.jpg" |
+| <img src="/readme_images/rlocus2.jpg"> | <img src="/readme_images/step.jpg"> | <img src="/readme_images/info.jpg"> |
