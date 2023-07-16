@@ -24,7 +24,7 @@ The **state space** is depicted below.
 
 <img src="/readme_images/state_space.PNG">
 
-The **linearization** around **y<sub>d</sub>** as the **setpoint** is accomplished using the following result.
+The **linearization** around **y<sub>d</sub>** as the **setpoint** is accomplished with the following result.
 
 <img src="/readme_images/linearization.PNG">
 
@@ -41,3 +41,18 @@ The **root locus** diagram of the given closed-loop transfer function is display
 Please find the zoomed version of the root locus diagram displayed below.
 
 <img src="/readme_images/zoom.PNG">
+
+To stabilize this system, a **PID controller** is designed with the following desired attributes for a **step input**:
+
+1. The maximum **step response** should be within 2 seconds.
+2. The **steady-state error** should be zero.
+3. The **settling time** should not exceed 2 seconds.
+4. The maximum **overshoot** should be limited to 35%.
+
+The PID controller: $G_c = \frac{6.046(s + 4)(s + 6)}{s}$
+
+After incorporating the PID controller into the system, its behavior is depicted as follows:
+
+| Root Locus | Step Response | Step Info |
+| --- | --- | --- |
+| $5[&Omega;]$ | $0.02[H]$ | $9.84  [\frac{m}{s^2}]$ | $0.3 [\frac{N \cdot m}{A^2}]$ | $106[g]$ | $0.02[\frac{N \cdot s}{m}]$ |
