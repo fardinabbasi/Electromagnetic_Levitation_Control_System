@@ -99,3 +99,5 @@ The PI controller: $G_c = \frac{(s + 2.371)}{s}$
 The system satisfies the **Nyquist Stability Criterion** as it possesses a pole in the right half of the imaginary axis, and N equals -1, meeting the condition $Z = N + P = 0$, thus establishing stability.
 
 Furthermore, the system currently exhibits a **phase margin** of approximately 50 degrees.
+
+Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
