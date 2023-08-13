@@ -1,10 +1,4 @@
 # Magnetic Levitation System Modeling
-> <picture>
->   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
->   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
-> </picture><br>
->
-> Check the branches!
 ## Introduction
 Magnetic levitation is a remarkable technique that utilizes the power of magnetic fields to defy gravity and suspend objects in mid-air. A prominent illustration of its practical implementation is the maglev train, which capitalizes on this levitating effect to minimize friction and achieve remarkable speeds.
 
@@ -19,7 +13,7 @@ By analyzing the aforementioned system, the equations are written as follows.
 | --- | --- | --- | ---| --- | --- |
 | $5[&Omega;]$ | $0.02[H]$ | $9.84  [\frac{m}{s^2}]$ | $0.3 [\frac{N \cdot m}{A^2}]$ | $106[g]$ | $0.02[\frac{N \cdot s}{m}]$ |
 
-## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Time_Analysis)
+## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Time_Analysis)
 The **state space** is depicted below.
 
 <img src="/readme_images/state_space.PNG">
@@ -61,7 +55,7 @@ Now this controller is added to the main **non-linear** system and its ability t
 
 <img src="/readme_images/3d.gif" width="500" height="500">
 
-## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/Frequency_Analysis)
+## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Frequency_Analysis)
 The **state space** is depicted below.
 
 <img src="/readme_images/state_space.PNG">
