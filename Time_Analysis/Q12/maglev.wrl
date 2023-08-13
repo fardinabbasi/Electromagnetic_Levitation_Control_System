@@ -1,0 +1,358 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+  title "VR Magnetic Levitation Model"
+  info "Copyright 1998-2013 HUMUSOFT s.r.o. and The MathWorks, Inc." 
+}
+NavigationInfo {
+  type "EXAMINE" 
+  headlight FALSE
+}
+Background {
+  skyColor [
+    0.8 0.8 1,
+    0.7 0.7 0.8,
+    0.5 0.5 0.8,
+    0.4 0.4 0.8 
+  ]
+  skyAngle [1, 1.2, 1.5708]
+  groundColor 0 0.8 0
+}
+DEF Camera1 Viewpoint {
+  description "Camera 1"
+  position 7 4 15
+  orientation 0 1 0 0.4
+  fieldOfView 1.2
+}
+Transform {
+  translation 70 40 150
+  rotation 0 1 0 0.22
+  center 70 40 150
+  children DEF Camera2 Viewpoint {
+    description "Pseudo ortho view"
+    position 0 0 0
+    orientation 1 0 0 -0.21
+    fieldOfView 0.07
+  }
+}
+DEF Camera3 Viewpoint {
+  description "Camera 3"
+  position 7 4 15
+  orientation 0 1 0 0.45
+  fieldOfView 0.3
+}
+Transform {
+  translation 100 50 0
+  rotation 0 1 0 1.57
+  children DEF Camera4 Viewpoint {
+    description "Camera 4"
+    position 0 0 0
+    orientation 1 0 0 -0.45
+    fieldOfView 0.15
+  }
+}
+Transform {
+  translation 1 2.5 3
+  rotation 0 1 0 0.2
+  center 1 2.5 3
+  children DEF Camera5 Viewpoint {
+    description "Camera 5"
+    position 0 0 0
+    orientation 1 0 0 0.7
+    fieldOfView 0.7
+  }
+}
+DirectionalLight {
+  direction -1 -2 -1
+}
+DirectionalLight {
+  direction 0 -2 1
+}
+Transform {
+  scale 0.5 0.5 0.5
+  children [
+    # Base
+    Shape {
+      appearance Appearance {
+        material Material {
+          specularColor 0.77 0.77 0.77
+          shininess 0.6
+          diffuseColor 0.4 0.4 0.4
+          ambientIntensity 0.25
+        }
+      }
+      geometry IndexedFaceSet {
+        solid FALSE
+        creaseAngle 1
+        coordIndex [
+          4, 0, 1, 5, -1, 
+          7, 3, 2, 6, -1, 
+          6, 2, 0, 4, -1, 
+          2, 3, 1, 0, -1, 
+          3, 7, 5, 1, -1, 
+          7, 6, 4, 5, -1 
+        ]
+        colorPerVertex FALSE
+        coord Coordinate {
+          point [
+            15 5 10,
+            15 0 10,
+            15 5 -10,
+            15 0 -10,
+            -10 5 10,
+            -10 0 10,
+            -10 5 -10,
+            -10 0 -10 
+          ]
+        }
+      }
+    }
+    # Diagram	 
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url "texture/maglev.gif" 
+        }
+      }
+      geometry IndexedFaceSet {
+        solid FALSE
+        creaseAngle 1
+        coordIndex [
+          0, 1, 2, 3, -1 
+        ]
+        colorPerVertex FALSE
+        texCoord TextureCoordinate {
+          point [
+            0 0,
+            1 0,
+            1 1,
+            0 1 
+          ]
+        }
+        coord Coordinate {
+          point [
+            13 5.1 9,
+            13 5.1 -9,
+            4 5.1 -9,
+            4 5.1 9 
+          ]
+        }
+      }
+    }
+    # Humusoft Logo	 
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url "texture/humusoft.png" 
+        }
+      }
+      geometry IndexedFaceSet {
+        solid FALSE
+        creaseAngle 1
+        coordIndex [
+          0, 1, 2, 3, -1 
+        ]
+        colorPerVertex FALSE
+        texCoord TextureCoordinate {
+          point [
+            0 1,
+            0 0,
+            1 0,
+            1 1 
+          ]
+        }
+        coord Coordinate {
+          point [
+            15.1 4 7,
+            15.1 1 7,
+            15.1 1 -7,
+            15.1 4 -7 
+          ]
+        }
+      }
+    }
+    # Column
+    Shape {
+      appearance Appearance {
+        material Material {
+          specularColor 0.67 0.46 0.44
+          shininess 0.17
+          diffuseColor 0.57 0.58 0.58
+          ambientIntensity 0.137
+        }
+      }
+      geometry IndexedFaceSet {
+        solid FALSE
+        creaseAngle 1
+        coordIndex [
+          4, 0, 1, 5, -1, 
+          7, 3, 2, 6, -1, 
+          2, 3, 1, 0, -1, 
+          3, 7, 5, 1, -1, 
+          7, 6, 4, 5, -1, 
+          11, 9, 10, 8, -1, 
+          4, 8, 10, 0, -1, 
+          0, 10, 11, 2, -1, 
+          2, 11, 9, 6, -1, 
+          8, 4, 6, 9 
+        ]
+        colorPerVertex FALSE
+        coord Coordinate {
+          point [
+            -6.5 15 1.3,
+            -6.5 5 1.3,
+            -6.5 15 -1.3,
+            -6.5 5 -1.3,
+            -9 15 1.3,
+            -9 5 1.3,
+            -9 15 -1.3,
+            -9 5 -1.3,
+            -9 16.5 2.5,
+            -9 16.5 -2.5,
+            -4 16.5 2.5,
+            -4 16.5 -2.5 
+          ]
+        }
+      }
+    }
+    # Trapeze
+    Shape {
+      appearance Appearance {
+        material Material {
+          specularColor 0.53 0.53 0.53
+          shininess 0.93
+          diffuseColor 0.38 0.38 0.42
+          ambientIntensity 0.0933
+        }
+      }
+      geometry IndexedFaceSet {
+        solid FALSE
+        creaseAngle 1.4
+        coordIndex [
+          0, 1, 2, 3, 4, 5, -1, 
+          0, 6, 7, 1, -1, 
+          1, 7, 8, 2, -1, 
+          2, 8, 9, 3, -1, 
+          3, 9, 10, 4, -1, 
+          4, 10, 11, 5, -1, 
+          5, 0, 6, 11, -1, 
+          11, 10, 9, 8, 7, 6, -1 
+        ]
+        colorPerVertex FALSE
+        coord Coordinate {
+          point [
+            -9 16.5 2.5,
+            1 16.5 2.5,
+            2 16.5 1.5,
+            2 16.5 -1.5,
+            1 16.5 -2.5,
+            -9 16.5 -2.5,
+            -9 17 2.5,
+            1 17 2.5,
+            2 17 1.5,
+            2 17 -1.5,
+            1 17 -2.5,
+            -9 17 -2.5 
+          ]
+        }
+      }
+    }
+    # Coil
+    Transform {
+      translation 0 14 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 1 0.68 0.51
+            shininess 0.07
+            emissiveColor 0.15 0.13 0.06
+            diffuseColor 0.44 0.1 0
+            ambientIntensity 0.0833
+          }
+        }
+        geometry Cylinder {
+          radius 1.3
+          height 5
+        }
+      }
+    }
+    # Magnet Core
+    Transform {
+      translation 0 11.25 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.3 0.25 0.3
+            shininess 0.05
+            diffuseColor 0.24 0.24 0.24
+            ambientIntensity 0.06
+          }
+        }
+        geometry Cylinder {
+          radius 0.4
+          height 0.5
+        }
+      }
+    }
+    # Honeywell Sensor
+    Transform {
+      translation 0 6.5 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            specularColor 0.3 0.25 0.3
+            shininess 0.05
+            diffuseColor 0.24 0.24 0.24
+            ambientIntensity 0.06
+          }
+        }
+        geometry Cylinder {
+          radius 1.5
+          height 3
+        }
+      }
+    }
+    # Acryllic Glass
+    Transform {
+      translation 0 6.5 0
+      children Shape {
+        appearance Appearance {
+          material Material {
+            transparency 0.4
+            specularColor 1 0.94 0.54
+            shininess 0.83
+            emissiveColor 0.4 0.4 0.4
+            diffuseColor 0.29 0.29 0.29
+            ambientIntensity 0
+          }
+        }
+        geometry Cylinder {
+          radius 2.5
+          height 3
+        }
+      }
+    }
+  ]
+}
+Transform {
+  translation 0 4.25 0
+  children [
+    DEF Grab_Sensor PlaneSensor {
+      maxPosition 0 1
+    }
+    DEF Ball Transform {
+      children Shape {
+        appearance Appearance {
+          material DEF Ball_material Material {
+            specularColor 0.63 0.92 1
+            diffuseColor 0 0 0
+            ambientIntensity 0
+          }
+        }
+        geometry Sphere {
+          radius 0.25
+        }
+      }
+    }
+  ]
+}
