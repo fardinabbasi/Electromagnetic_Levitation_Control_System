@@ -7,7 +7,10 @@ The magnetic levitation system is represented by the understudied system depicte
 
 <img src="/readme_images/levitation_system.jpg">
 By analyzing the aforementioned system, the equations are written as follows.
-<img src="/readme_images/equations.PNG">
+
+* $F_m=c\frac{I}{1-y}$
+* $m\ddot{y}=-mg-f_v\dot{y}+F_m$
+* $V=RI+L\dot{I}$
 
 | R | L | g | c | M | f<sub>v</sub> |
 | --- | --- | --- | ---| --- | --- |
