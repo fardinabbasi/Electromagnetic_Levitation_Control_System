@@ -16,7 +16,6 @@ By analyzing the aforementioned system, the equations are written as follows.
 | --- | --- | --- | ---| --- | --- |
 | $5[&Omega;]$ | $0.02[H]$ | $9.84  [\frac{m}{s^2}]$ | $0.3 [\frac{N \cdot m}{A^2}]$ | $106[g]$ | $0.02[\frac{N \cdot s}{m}]$ |
 
-## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Time_Analysis)
 The **state space** is depicted below.
 
 $$x(t) = \left(\begin{array}{cc} 
@@ -58,7 +57,9 @@ The **open-loop** transfer function is obtained by assuming $y_d = 0.306[m]$ and
 
 $$G(s)=\frac{X_1(s)}{V(s)}=\frac{633}{s^3+250.19s^2+32.83s-3542.5}$$
 
-And the **closed-loop** transfer function with a **negative unit feedback** is written as follows.
+## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Time_Analysis)
+
+The **closed-loop** transfer function with a **negative unit feedback** is written as follows.
 
 $$H(s)=\frac{kG(s)}{1+kG(s)}=k\frac{633}{s^3+250.19s^2+32.83s+633k-3542.5}$$
 
@@ -90,16 +91,6 @@ Now this controller is added to the main **non-linear** system and its ability t
 <img src="/readme_images/3d.gif" width="500" height="500">
 
 ## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Frequency_Analysis)
-The **state space** is depicted below.
-
-<img src="/readme_images/state_space.PNG">
-
-The **linearization** around **y<sub>d</sub>** as the **setpoint** is accomplished with the following result.
-
-<img src="/readme_images/linearization.PNG">
-
-The **open-loop** transfer function is obtained by assuming y<sub>d</sub> = 0.306[m] and following this procedure.
-<img src="/readme_images/transfer_func.PNG">
 
 The **Bode** and **Nyquist** diagrams of this uncontrolled system are depicted below.
 
