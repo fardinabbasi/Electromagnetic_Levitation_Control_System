@@ -54,11 +54,13 @@ x_3(t)
 \end{array}\right)V
 $$
 
-The **open-loop** transfer function is obtained by assuming y<sub>d</sub> = 0.306[m] and following this procedure.
-<img src="/readme_images/transfer_func.PNG">
+The **open-loop** transfer function is obtained by assuming $y_d = 0.306[m]$ and following this procedure.
+
+$$G(s)=\frac{X_1(s)}{V(s)}=\frac{633}{s^3+250.19s^2+32.83s-3542.5}$$
 
 And the **closed-loop** transfer function with a **negative unit feedback** is written as follows.
-<img src="/readme_images/closed.PNG">
+
+$$H(s)=\frac{kG(s)}{1+kG(s)}=k\frac{633}{s^3+250.19s^2+32.83s+633k-3542.5}$$
 
 The **root locus** diagram of the given closed-loop transfer function is displayed below. However, since the diagram lies on the right side of the imaginary axis, it indicates **instability**.
 
