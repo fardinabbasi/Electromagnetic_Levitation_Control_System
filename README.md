@@ -19,11 +19,40 @@ By analyzing the aforementioned system, the equations are written as follows.
 ## [Time Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Time_Analysis)
 The **state space** is depicted below.
 
-<img src="/readme_images/state_space.PNG">
+$$x(t) = \left(\begin{array}{cc} 
+x_1(t)\\
+x_2(t)\\
+x_3(t)
+\end{array}\right)=\left(\begin{array}{cc} 
+y(t)\\
+\dot{y}(t)\\
+I(t)
+\end{array}\right)$$
 
 The **linearization** around **y<sub>d</sub>** as the **setpoint** is accomplished with the following result.
 
-<img src="/readme_images/linearization.PNG">
+$$
+\left(\begin{array}{cc} 
+\dot{x_1}(t)\\
+\dot{x_2}(t)\\
+\dot{x_3}(t)
+\end{array}\right)=
+\left(\begin{array}{cc} 
+0 & 1 & 0\\
+\frac{9.84}{1-y_d} & -0.188 & 10.55\sqrt{\frac{1}{1-y_d}}\\
+0 & 0 & -250
+\end{array}\right)
+\left(\begin{array}{cc} 
+x_1(t)\\
+x_2(t)\\
+x_3(t)
+\end{array}\right)+
+\left(\begin{array}{cc} 
+0\\
+0\\
+250
+\end{array}\right)V
+$$
 
 The **open-loop** transfer function is obtained by assuming y<sub>d</sub> = 0.306[m] and following this procedure.
 <img src="/readme_images/transfer_func.PNG">
