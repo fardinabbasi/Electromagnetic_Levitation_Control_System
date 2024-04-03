@@ -61,7 +61,7 @@ $$G(s)=\frac{X_1(s)}{V(s)}=\frac{633}{s^3+250.19s^2+32.83s-3542.5}$$
 
 The **closed-loop** transfer function with a **negative unit feedback** is written as follows.
 
-$$H(s)=\frac{kG(s)}{1+kG(s)}=k\frac{633}{s^3+250.19s^2+32.83s+633k-3542.5}$$
+$$H(s)=\frac{kG(s)}{1+kG(s)}=\frac{633k}{s^3+250.19s^2+32.83s+633k-3542.5}$$
 
 The **root locus** diagram of the given closed-loop transfer function is displayed below. However, since the diagram lies on the right side of the imaginary axis, it indicates **instability**.
 
