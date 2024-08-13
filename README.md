@@ -2,10 +2,10 @@
 ## Introduction
 Magnetic levitation is a remarkable technique that utilizes the power of magnetic fields to defy gravity and suspend objects in mid-air. A prominent illustration of its practical implementation is the maglev train, which capitalizes on this levitating effect to minimize friction and achieve remarkable speeds.
 
-<img src="/readme_images/train.PNG">
+<img src="./doc/train.PNG">
 The magnetic levitation system is represented by the understudied system depicted below.
 
-<img src="/readme_images/levitation_system.jpg">
+<img src="./doc/levitation_system.jpg">
 By analyzing the aforementioned system, the equations are written as follows.
 
 * $F_m=c\frac{I}{1-y}$
@@ -65,11 +65,11 @@ $$H(s)=\frac{kG(s)}{1+kG(s)}=\frac{633k}{s^3+250.19s^2+32.83s+633k-3542.5}$$
 
 The **root locus** diagram of the given closed-loop transfer function is displayed below. However, since the diagram lies on the right side of the imaginary axis, it indicates **instability**.
 
-<img src="/readme_images/rlocus1.PNG">
+<img src="./doc/rlocus1.PNG">
 
 Please find the zoomed version of the root locus diagram displayed below.
 
-<img src="/readme_images/zoom.PNG">
+<img src="./doc/zoom.PNG">
 
 To stabilize this system, a **PID controller** is designed with the following desired attributes for a **step input**:
 
@@ -84,11 +84,11 @@ After incorporating the PID controller into the system, its behavior is depicted
 
 | Root Locus | Step Response | Step Info |
 | --- | --- | --- |
-| <img src="/readme_images/rlocus2.jpg"> | <img src="/readme_images/step.jpg"> | <img src="/readme_images/info.jpg"> |
+| <img src="./doc/rlocus2.jpg"> | <img src="./doc/step.jpg"> | <img src="./doc/info.jpg"> |
 
 Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
 
-<img src="/readme_images/3d.gif" width="500" height="500">
+<img src="./doc/3d.gif" width="500" height="500">
 
 ## [Frequency_Analysis](https://github.com/fardinabbasi/Electromagnetic_Levitation_System_Modeling/tree/main/Frequency_Analysis)
 
@@ -96,7 +96,7 @@ The **Bode** and **Nyquist** diagrams of this uncontrolled system are depicted b
 
 | Bode | Nyquist |
 | --- | --- |
-| <img src="/readme_images/bode1.jpg"> | <img src="/readme_images/nyquist.jpg"> |
+| <img src="./doc/bode1.jpg"> | <img src="./doc/nyquist.jpg"> |
 
 The following conclusions can be drawn from the provided diagrams:
 1. As the magnitude never reaches 0 dB, the **phase margin** is considered to be infinite.
@@ -113,11 +113,17 @@ The PI controller: $G_c = \frac{(s + 2.371)}{s}$
 
 | Nyquist | Bode | Step Response | Step Info |
 | --- | --- | --- | --- |
-| <img src="/readme_images/nyquist2.jpg"> | <img src="/readme_images/bode4.jpg"> | <img src="/readme_images/step_responcef.jpg"> | <img src="/readme_images/info2.PNG"> |
+| <img src="./doc/nyquist2.jpg"> | <img src="./doc/bode4.jpg"> | <img src="./doc/step_responcef.jpg"> | <img src="./doc/info2.PNG"> |
 
 The system satisfies the **Nyquist Stability Criterion** as it possesses a pole in the right half of the imaginary axis, and N equals -1, meeting the condition $Z = N + P = 0$, thus establishing stability.
 
 Furthermore, the system currently exhibits a **phase margin** of approximately 50 degrees.
 
 Now this controller is added to the main **non-linear** system and its ability to control it is as follows.
-<img src="/readme_images/3d.gif" width="600" height="600">
+<img src="./doc/3d.gif" width="600" height="600">
+
+## Course Description
+- **Course**: Machine Learning [ECE 501]
+- **Semester**: Spring 2023
+- **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
+- **Instructors:** Dr. A. Dehaqani, Dr. Tavassolipour
