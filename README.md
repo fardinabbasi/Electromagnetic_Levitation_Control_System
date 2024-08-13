@@ -123,7 +123,7 @@ Now this controller is added to the main **non-linear** system and its ability t
 <img src="./doc/3d.gif" width="600" height="600">
 
 ## Course Description
-- **Course**: Machine Learning [ECE 501]
-- **Semester**: Spring 2023
+- **Course**: Linear Control Systems [ECE 224]
+- **Semester**: Fall 2022
 - **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
-- **Instructors:** Dr. A. Dehaqani, Dr. Tavassolipour
+- **Instructor:** Dr. Yaghmaea
