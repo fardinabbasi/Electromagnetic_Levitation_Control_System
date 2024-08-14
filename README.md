@@ -127,3 +127,4 @@ Now this controller is added to the main **non-linear** system and its ability t
 - **Semester**: Fall 2022
 - **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
 - **Instructor:** Dr. Yaghmaea
+- **Contributors:** [Fardin Abbasi](https://github.com/fardinabbasi), [Amirhossein Yousefvand](https://github.com/Amirhossein-Yousefvand)
